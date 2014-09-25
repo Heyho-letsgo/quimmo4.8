@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   belongs_to :principal_groupe
   belongs_to :sous_groupe
   belongs_to :agence
+  belongs_to :travailleur
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
     if login = conditions.delete(:login)
