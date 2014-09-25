@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :sous_groupes
+
   resources :travailleurs
 
   devise_for :admin_users, ActiveAdmin::Devise.config
