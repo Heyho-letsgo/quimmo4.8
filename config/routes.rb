@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :principal_groupes
+
   resources :sous_groupes
 
   resources :travailleurs
